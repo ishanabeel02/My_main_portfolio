@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isha Nabeel — AI Student &amp; Builder</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+
+<div class="sky" id="sky">
+  <div class="celestial"></div>
+  <div class="cloud c1"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div class="cloud c2"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div class="cloud c3"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div id="starfield"></div>
+  <div id="fireflies"></div>
+  <div class="skyline" id="skyline"></div>
+</div>
+
+<header>
+  <a href="index.html" class="logo"><span class="bracket">{</span>&nbsp;I.N&nbsp;<span class="bracket">}</span></a>
+  <nav>
+    <ul>
+      <li><a href="#about" class="nav-link">about</a></li>
+      <li><a href="#skills" class="nav-link">skills</a></li>
+      <li><a href="#experience" class="nav-link">experience</a></li>
+      <li><a href="projects.html" class="nav-link">projects</a></li>
+      <li><a href="#achievements" class="nav-link">achievements</a></li>
+      <li><a href="#contact" class="nav-link">contact</a></li>
+    </ul>
+  </nav>
+  <div class="mode-toggle" id="modeToggle">
+    <button data-mode="day" title="Day">☀</button>
+    <button data-mode="evening" title="Evening">🌇</button>
+    <button data-mode="night" title="Night">☾</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-eyebrow">// bs artificial intelligence · sialkot, pakistan</div>
+        <h1 style="font-size: 1.8rem;">
+  Isha Nabeel
+  <span class="accent">teaching machines to learn</span> while I’m still learning myself.
+</h1>
+        <p class="hero-sub" id="typedSub"><span id="typedText"></span><span class="cursor">&nbsp;</span></p>
+        <div class="hero-actions">
+          <a href="assets/Isha_Nabeel_CV.pdf" download class="btn primary">Download CV</a>
+          <a href="mailto:ishanabeel256@gmail.com" class="btn ghost">Say hello</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <div class="portrait-ring"></div>
+          <img src="assets/mascot-day.png" alt="Isha, illustrated" class="p-day active">
+          <img src="assets/mascot-pink.png" alt="Isha, illustrated" class="p-evening">
+          <img src="assets/mascot-night.png" alt="Isha, illustrated" class="p-night">
+        </div>
+        <span class="chip-tag t1">Vibe Coder</span>
+        <span class="chip-tag t2">NLP · RAG · AI · ML</span>
+        <span class="chip-tag t3">data Analysis</span>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>scroll</span><span class="line"></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="eyebrow">about</div>
+    <div class="about-grid">
+      <p class="lede reveal">
+        I'm an <strong>AI student</strong> at the University of Management and Technology, spending most of my time
+        somewhere between machine learning notebooks and half-finished side projects. I like systems that retrieve,
+        classify, and reason &mdash; and I like explaining them just as much as I like building them.
+        Outside of code, I coordinate PR and on-ground logistics for my university's Computer Science Society,
+        which mostly means I'm equally comfortable debugging a model at 2am and managing a room full of students at 9am.
+      </p>
+      <div class="stats reveal">
+        <div class="stat-card"><div class="stat-num" data-count="3.86">0</div><div class="stat-label">CGPA / 4.00</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="5">0</div><div class="stat-label">Dean &amp; Rector Awards</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="6">0</div><div class="stat-label">Projects</div></div>
+        <div class="stat-card"><div class="stat-num" data-count="4">0</div><div class="stat-label">Competition Podiums</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="eyebrow">skills</div>
+    <h2 class="section-title reveal">What I reach for</h2>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">C++</span><span class="tag">SQL</span>
+          <span class="tag">Assembly</span><span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">C#</span> <span class="tag">JAVASCRIPT</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>ML / AI</h3>
+        <div class="tag-cloud">
+          <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">NLP</span>
+          <span class="tag">RAG</span><span class="tag">Information Retrieval</span><span class="tag">Model Evaluation</span>
+          <span class="tag">Feature Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Tools</h3>
+        <div class="tag-cloud">
+          <span class="tag">PyCharm</span><span class="tag">VS Code</span><span class="tag">Colab</span>
+          <span class="tag">SQL Server</span><span class="tag">GitHub</span><span class="tag">Linux</span>
+          <span class="tag">Excel</span><span class="tag">Cisco Packet Tracer</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Working style</h3>
+        <div class="tag-cloud">
+          <span class="tag">Problem-solving</span><span class="tag">Communication</span><span class="tag">Teamwork</span>
+          <span class="tag">Time management</span><span class="tag">Critical thinking</span><span class="tag">Adaptability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE + EDUCATION -->
+  <section id="experience">
+    <div class="eyebrow">experience &amp; education</div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <span class="tl-date">2026 — Present</span>
+        <h3>PR &amp; Event Coordination Member</h3>
+        <div class="org">Computer Science Society, UMT · Sialkot, Pakistan</div>
+        <p>Supporting PR and on-ground coordination for technical events &mdash; student communication, check-ins, and keeping event flow on schedule.</p>
+      </div>
+      <div class="tl-item reveal">
+        <span class="tl-date">2023 — 2027</span>
+        <h3>BS, Artificial Intelligence</h3>
+        <div class="org">University of Management and Technology · CGPA 3.86</div>
+        <p>Coursework spanning Data Structures, Machine Learning, Deep Learning, NLP, Data Mining, Operating Systems, and Analysis of Algorithms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (featured, 3 of 6) -->
+  <section id="projects">
+    <div class="eyebrow">projects</div>
+    <h2 class="section-title reveal">Projects I have created</h2>
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
+        <h3>Study Buddy</h3>
+        <p>A full-stack ASP.NET MVC study hub that turns uploaded files or topics into lectures, flashcards, and quizzes via an AI API. Includes a weekly planner with task analytics, a Pomodoro timer, and session-based auth.</p>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-stack">PYTHON</div>
+        <h3>CyberLawPal — Cybercrime RAG System</h3>
+        <p>A retrieval-augmented generation assistant for cybercrime law queries under PECA 2016. FAISS + all-MiniLM-L6-v2 embeddings for semantic search, Groq-hosted LLMs for generation, and a Gradio interface.</p>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
+        <h3>TheWayShop — E-Commerce Platform</h3>
+        <p>A full-stack ASP.NET MVC storefront on SQL Server with role-based access for Super Admin, Admin, and Users, product/category management, and a complete PayPal Sandbox checkout flow.</p>
+      </div>
+    </div>
+    <div class="view-all-wrap">
+      <a href="projects.html" class="btn primary">View all projects</a>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS + CERTIFICATES -->
+  <section id="achievements">
+    <div class="eyebrow">achievements</div>
+    <h2 class="section-title reveal">Wins along the way</h2>
+    <div class="ach-grid">
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🏅</span>
+            <h4>4 Dean Awards &amp; 1 Rector Award</h4>
+            <span class="meta">University of Management and Technology</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/rector.jpg" alt="Dean and Rector Award" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/dean-rector-awards.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🥉</span>
+            <h4>Coding Quiz Competition — 3rd</h4>
+            <span class="meta">UMT, 2025</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/quizcompetition.jpg" alt="Coding Quiz Competition" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/coding-quiz.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🥈</span>
+            <h4>Code Sprint Junior — Runner-up</h4>
+            <span class="meta">InnovateX · Brackets Ltd &amp; GIFT University, 2025</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/codesprint.jpg" alt="Code Sprint Junior" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/code-sprint-junior.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🏆</span>
+            <h4>Speed Programming — Winner</h4>
+            <span class="meta">Createx Competition, UMT &amp; Patronecs, 2026</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/speedprogramming.jpg" alt="Speed Programming Winner" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/speed-programming.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🥈</span>
+            <h4>Bug Hunting — Runner-up</h4>
+            <span class="meta">Createx Competition, UMT &amp; Patronecs, 2026</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/bughunting.jpg" alt="Bug Hunting Runner-up" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/bug-hunting.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🤝</span>
+            <h4>Competition &amp; Event Management Volunteer</h4>
+            <span class="meta">UMT Createxl</span>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/certificateofapp.jpg" alt="Volunteer work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add photo here<br><span>assets/achievements/volunteer.jpg</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-top:70px;">certificates</div>
+    <h2 class="section-title reveal">A few I'm proud of</h2>
+    <div class="flip-grid">
+         <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🎓</span>
+            <h4>Python Data Analyst</h4>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/certificates/python data analyst.jpg" alt="Python Data Analyst certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add certificate<br><span>assets/certificates/python-data-analyst.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🎓</span>
+            <h4>Google Cybersecurity</h4>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets\certificates\GoogleCybersecurity.jpg" alt="Google Cybersecurity certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add certificate<br><span>assets/certificates/google-cybersecurity.jpg</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <span class="medal">🎓</span>
+            <h4>Introduction to SQL</h4>
+            <span class="flip-hint">tap to view</span>
+          </div>
+          <div class="flip-card-back">
+            <img src="assets/certificates/SQL.jpg" alt="Introduction to SQL certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder">Add certificate<br><span>assets/certificates/intro-to-sql.jpg</span></div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="view-all-wrap">
+      <a href="certificates.html" class="btn primary">View all certificates</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="eyebrow" style="justify-content:center;">contact</div>
+      <h2 class="reveal">Let's build something.</h2>
+      <p class="reveal">Open to internships, collaborations, and anything that involves a good dataset and a tight deadline.</p>
+      <div class="contact-links reveal">
+        <a href="mailto:ishanabeel256@gmail.com" class="btn primary">ishanabeel256@gmail.com</a>
+        <a href="https://github.com/ishanabeel02" target="_blank" class="btn ghost">GitHub</a>
+        <a href="https://linkedin.com/in/isha-nabeel-bb0a51216" target="_blank" class="btn ghost">LinkedIn</a>
+        <a href="https://ishanabeel02.github.io/MyPortfolio/" target="_blank" class="btn ghost">Old Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>{ built by Isha Nabeel · Sialkot, Pakistan · <span id="year"></span> }</footer>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

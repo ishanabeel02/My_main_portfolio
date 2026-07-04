@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="day">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Isha Nabeel</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="projects">
+
+<div class="sky" id="sky">
+  <div class="celestial"></div>
+  <div class="cloud c1"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div class="cloud c2"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div class="cloud c3"><svg viewBox="0 0 200 80" fill="#ffffff"><ellipse cx="60" cy="50" rx="55" ry="26"/><ellipse cx="110" cy="35" rx="45" ry="30"/><ellipse cx="150" cy="52" rx="40" ry="22"/></svg></div>
+  <div id="starfield"></div>
+  <div id="fireflies"></div>
+  <div class="skyline" id="skyline"></div>
+</div>
+
+<header>
+  <a href="index.html" class="logo"><span class="bracket">{</span>&nbsp;I.N&nbsp;<span class="bracket">}</span></a>
+  <nav>
+    <ul>
+      <li><a href="index.html#about" class="nav-link">about</a></li>
+      <li><a href="index.html#skills" class="nav-link">skills</a></li>
+      <li><a href="index.html#experience" class="nav-link">experience</a></li>
+      <li><a href="projects.html" class="nav-link">projects</a></li>
+      <li><a href="index.html#achievements" class="nav-link">achievements</a></li>
+      <li><a href="index.html#contact" class="nav-link">contact</a></li>
+    </ul>
+  </nav>
+  <div class="mode-toggle" id="modeToggle">
+    <button data-mode="day" title="Day">☀</button>
+    <button data-mode="evening" title="Evening">🌇</button>
+    <button data-mode="night" title="Night">☾</button>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="eyebrow">projects</div>
+    <h1>Everything I've built</h1>
+    <p>A mix of full-stack apps, machine learning systems, and lower-level experiments — spanning Python, C#, C++, and SQL.</p>
+    <a href="index.html" class="back-home">← back to home</a>
+  </div>
+
+  <section>
+    <div class="project-grid">
+      <a href="https://studybuddyy.somee.com" target="_blank" rel="noopener" class="project-card reveal project-card-link">
+        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
+        <h3>Study Buddy</h3>
+        <p>A full-stack ASP.NET MVC study hub that turns uploaded files or topics into lectures, flashcards, and quizzes via an AI API. Includes a weekly planner with task analytics, a Pomodoro timer, and session-based auth.</p>
+      </a>
+      <div class="project-card reveal">
+        <div class="project-stack">PYTHON</div>
+        <h3>CyberLawPal — Cybercrime RAG System</h3>
+        <p>A retrieval-augmented generation assistant for cybercrime law queries under PECA 2016. FAISS + all-MiniLM-L6-v2 embeddings for semantic search, Groq-hosted LLMs for generation, and a Gradio interface.</p>
+      </div>
+      <a href="https://www.ishanabeel.somee.com/Home/shop" target="_blank" rel="noopener" class="project-card reveal project-card-link">
+        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
+        <h3>TheWayShop — E-Commerce Platform</h3>
+        <p>A full-stack ASP.NET MVC storefront on SQL Server with role-based access for Super Admin, Admin, and Users, product/category management, and a complete PayPal Sandbox checkout flow.</p>
+      </a>
+      <div class="project-card reveal">
+        <div class="project-stack">PYTHON</div>
+        <h3>Fake News Detection</h3>
+        <p>A text classifier for fake news using NLP preprocessing and TF-IDF vectorization, benchmarking multiple classifiers on accuracy, precision, recall, and F1.</p>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-stack">SQL</div>
+        <h3>Airline Database System</h3>
+        <p>A relational database for managing flight, passenger, and booking records, built around clean normalized queries.</p>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-stack">C++</div>
+        <h3>Encryption &amp; Decryption</h3>
+        <p>Matrix-based encryption algorithms for secure message encoding and decoding, built from first principles.</p>
+      </div>
+    </div>
+
+    <div class="github-cta reveal">
+      <h3>Want to see the code?</h3>
+      <p>Every project above lives in a repo on my GitHub — issues, commits, and all.</p>
+      <a href="https://github.com/ishanabeel02" target="_blank" class="btn primary">Visit my GitHub</a>
+    </div>
+  </section>
+
+  <footer>{ built by Isha Nabeel · Sialkot, Pakistan · <span id="year"></span> }</footer>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
