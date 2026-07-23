@@ -77,19 +77,30 @@
     <div class="eyebrow">about</div>
     <div class="about-grid">
       <p class="lede reveal">
-        I'm an <strong>AI student</strong> at the University of Management and Technology, spending most of my time
-        somewhere between machine learning notebooks and half-finished side projects. I like systems that retrieve,
-        classify, and reason &mdash; and I like explaining them just as much as I like building them.
-        Outside of code, I coordinate PR and on-ground logistics for my university's Computer Science Society,
-        which mostly means I'm equally comfortable debugging a model at 2am and managing a room full of students at 9am.
+        Hi, I'm Isha. Most of my projects are the result of caffeine and a 2am thought that wouldn't let me sleep — an idea shows up, headphones go on, and by morning it's usually a half-working repo.
+        I'm a BS Artificial Intelligence student, currently in my 6th semester, and I mostly live in computer vision, NLP/LLMs, RAG systems, and full-stack web development. I love math and coding — the kind of problems where you're stuck for hours and then one small fix makes everything click.
+        I like projects that don't stay theoretical. I'd rather train a model, break it, fix it, and actually ship it than leave an idea sitting in a notebook forever.
       </p>
-      <div class="stats reveal">
-        <div class="stat-card"><div class="stat-num" data-count="3.86">0</div><div class="stat-label">CGPA / 4.00</div></div>
-        <div class="stat-card"><div class="stat-num" data-count="5">0</div><div class="stat-label">Dean &amp; Rector Awards</div></div>
-        <div class="stat-card"><div class="stat-num" data-count="6">0</div><div class="stat-label">Projects</div></div>
-        <div class="stat-card"><div class="stat-num" data-count="4">0</div><div class="stat-label">Competition Podiums</div></div>
+    <div class="stats-notes">
+      <div class="stat-sticky yellow rot-l">
+        <div class="stat-num" data-count="3.86">0</div>
+        <div class="stat-lbl">CGPA / 4.00</div>
+      </div>
+      <div class="stat-sticky blue rot-r">
+        <div class="stat-num" data-count="5">0</div>
+        <div class="stat-lbl">Dean &amp; Rector Awards</div>
+      </div>
+      <div class="stat-sticky pink rot-r-sm">
+        <div class="stat-num" data-count="12">0</div>
+        <div class="stat-lbl">Certificates</div>
+      </div>
+      <div class="stat-sticky yellow rot-l-sm">
+        <div class="stat-num" data-count="27">0</div>
+        <div class="stat-lbl">GitHub Repos</div>
       </div>
     </div>
+    </div>
+  
   </section>
 
   <!-- SKILLS -->
@@ -98,11 +109,12 @@
     <h2 class="section-title reveal">What I reach for</h2>
     <div class="skill-groups">
       <div class="skill-group reveal">
-        <h3>Languages</h3>
+        <h3>Languages & FrameWork</h3>
         <div class="tag-cloud">
-          <span class="tag">Python</span><span class="tag">C++</span><span class="tag">SQL</span>
-          <span class="tag">Assembly</span><span class="tag">HTML</span><span class="tag">CSS</span>
-          <span class="tag">C#</span> <span class="tag">JAVASCRIPT</span>
+            <span class="tag">Python</span><span class="tag">C++</span><span class="tag">SQL</span>
+            <span class="tag">Assembly</span><span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">C#</span><span class="tag">JAVASCRIPT</span>
+            <span class="tag">React</span><span class="tag">ASP.NET MVC</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -111,6 +123,9 @@
           <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">NLP</span>
           <span class="tag">RAG</span><span class="tag">Information Retrieval</span><span class="tag">Model Evaluation</span>
           <span class="tag">Feature Engineering</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">MediaPipe</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -151,30 +166,59 @@
   </section>
 
   <!-- PROJECTS (featured, 3 of 6) -->
-  <section id="projects">
-    <div class="eyebrow">projects</div>
-    <h2 class="section-title reveal">Projects I have created</h2>
-    <div class="project-grid">
-      <div class="project-card reveal">
-        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
-        <h3>Study Buddy</h3>
-        <p>A full-stack ASP.NET MVC study hub that turns uploaded files or topics into lectures, flashcards, and quizzes via an AI API. Includes a weekly planner with task analytics, a Pomodoro timer, and session-based auth.</p>
+<section id="projects">
+  <div class="eyebrow">projects</div>
+  <h2 class="section-title reveal">Projects I have created</h2>
+  <div class="project-grid">
+
+     <a href="https://studybuddyy.somee.com" target="_blank" rel="noopener" class="project-card reveal project-card-link">
+      <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
+      <h3>Study Buddy</h3>
+      <p>An ASP.NET MVC study hub that turns uploaded files or topics into lectures, flashcards, and quizzes through an AI API. Includes a weekly planner with task analytics, a Pomodoro timer, and session-based auth to keep progress private.</p>
+      <div class="badge-row">
+        <span class="badge-oval">Groq API</span>
+        <span class="badge-oval">ASP.NET MVC</span>
+        <span class="badge-oval">Live demo →</span>
       </div>
-      <div class="project-card reveal">
-        <div class="project-stack">PYTHON</div>
-        <h3>CyberLawPal — Cybercrime RAG System</h3>
-        <p>A retrieval-augmented generation assistant for cybercrime law queries under PECA 2016. FAISS + all-MiniLM-L6-v2 embeddings for semantic search, Groq-hosted LLMs for generation, and a Gradio interface.</p>
+    </a>
+
+   <div class="project-card reveal">
+      <div class="project-stack">PYTHON</div>
+      <h3>CyberLawPal — Cybercrime RAG System</h3>
+      <p>A retrieval-augmented generation assistant that answers cybercrime law questions under Pakistan's PECA 2016. Semantic search runs on FAISS with all-MiniLM-L6-v2 embeddings, generation is handled by Groq-hosted LLMs, and the whole thing is wrapped in a Gradio interface anyone can actually use.</p>
+      <div class="badge-row">
+        <span class="badge-oval">FAISS</span>
+        <span class="badge-oval">all-MiniLM-L6-v2</span>
+        <span class="badge-oval">Groq</span>
+        <span class="badge-oval">Gradio</span>
       </div>
-      <div class="project-card reveal">
-        <div class="project-stack">HTML · CSS · JAVASCRIPT · C#</div>
-        <h3>TheWayShop — E-Commerce Platform</h3>
-        <p>A full-stack ASP.NET MVC storefront on SQL Server with role-based access for Super Admin, Admin, and Users, product/category management, and a complete PayPal Sandbox checkout flow.</p>
-      </div>
+      <a class="github-link" href="https://github.com/ishanabeel02/Cyberlawpal" target="_blank" rel="noopener">
+        <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        View on GitHub
+      </a>
     </div>
-    <div class="view-all-wrap">
-      <a href="projects.html" class="btn primary">View all projects</a>
+
+    <div class="project-card reveal">
+      <div class="project-stack">PYTHON</div>
+      <h3>Driver Drowsiness Detection</h3>
+      <p>A real-time pipeline that catches drowsy driving before it becomes dangerous — an eye CNN and a mouth CNN run alongside EAR, PERCLOS, and MAR geometric signals, fused over time and streamed live to a WebSocket dashboard for instant alerts.</p>
+      <div class="badge-row">
+          <span class="badge-accuracy">~92% eye CNN</span>
+          <span class="badge-accuracy">~92% mouth CNN</span>
+          <span class="badge-oval">MediaPipe</span>
+          <span class="badge-oval">WebSocket</span>
+      </div>
+      <a class="github-link" href="https://github.com/ishanabeel02/FakeNewsDetection"" target="_blank" rel="noopener">
+        <svg class="gh-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        View on GitHub
+      </a>
     </div>
-  </section>
+
+  </div>
+  <div class="view-all-wrap">
+    <a href="projects.html" class="btn primary">View all projects</a>
+  </div>
+</section>
 
   <!-- ACHIEVEMENTS + CERTIFICATES -->
   <section id="achievements">
@@ -278,7 +322,7 @@
             <span class="flip-hint">tap to view</span>
           </div>
           <div class="flip-card-back">
-            <img src="assets/certificates/Pythondataanalyst.jpg" alt="Python Data Analyst certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <img src="assets/certificates/python data analyst.jpg" alt="Python Data Analyst certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="img-placeholder">Add certificate<br><span>assets/certificates/python-data-analyst.jpg</span></div>
           </div>
         </div>
@@ -315,20 +359,37 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-wrap">
-      <div class="eyebrow" style="justify-content:center;">contact</div>
-      <h2 class="reveal">Let's build something.</h2>
-      <p class="reveal">Open to internships, collaborations, and anything that involves a good dataset and a tight deadline.</p>
-      <div class="contact-links reveal">
-        <a href="mailto:ishanabeel256@gmail.com" class="btn primary">ishanabeel256@gmail.com</a>
-        <a href="https://github.com/ishanabeel02" target="_blank" class="btn ghost">GitHub</a>
-        <a href="https://linkedin.com/in/isha-nabeel-bb0a51216" target="_blank" class="btn ghost">LinkedIn</a>
-        <a href="https://ishanabeel02.github.io/MyPortfolio/" target="_blank" class="btn ghost">Old Portfolio</a>
+<!-- CONTACT -->
+<section id="contact">
+
+  <div class="contact-wrap">
+    <div class="eyebrow" style="justify-content:center;">contact</div>
+    <h2 class="reveal">Let's build something.</h2>
+    <p class="reveal">Open to internships, collaborations, and anything that involves a good dataset and a tight deadline.</p>
+
+    <div class="terminal-row reveal">
+      <div class="terminal">
+        <div class="bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="title">contact.sh</span>
+        </div>
+        <div class="body">
+          <p class="line"><span class="prompt">$</span> contact --isha</p>
+          <p class="line out">&gt; github: <a href="https://github.com/ishanabeel02" target="_blank" rel="noopener" class="term-link">github.com/ishanabeel02</a></p>
+          <p class="line out">&gt; email: <a href="mailto:ishanabeel256@gmail.com" class="term-link">ishanabeel256@gmail.com</a></p>
+          <p class="line out">&gt; linkedin: <a href="https://linkedin.com/in/isha-nabeel-bb0a51216" target="_blank" rel="noopener" class="term-link">isha-nabeel</a></p>
+          <p class="line out">&gt; response time: faster than my model's inference on a bad GPU day</p>
+        </div>
+      </div>
+
+      <div class="sticky blue">
+        reach out if you're hiring, collaborating, or just enjoy well-commented code.
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <footer>{ built by Isha Nabeel · Sialkot, Pakistan · <span id="year"></span> }</footer>
 </main>
