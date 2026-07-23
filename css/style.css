@@ -31,8 +31,9 @@ html[data-mode="day"] {
   --card-border: rgba(13,43,85,0.12);
   --glow: #ffd166;
   --sticky-bg:#CFE8FA;
-  --sticky-text:#0d2b55;
+  --sticky-text:#1B4E9B;
   --sticky-tape: rgba(255,255,255,0.6);
+  --sticky-label:#4A4D45;
     --badge-bg:#DCEBFF;
   --badge-border:#5B9EF2;
   --badge-text:#1B4E9B;
@@ -51,6 +52,7 @@ html[data-mode="evening"] {
   --sticky-bg:#FCE1F0;
   --sticky-text:#9B1B5C;
   --sticky-tape: rgba(255,255,255,0.5);
+  --sticky-label:#6b4a5c;
   --badge-bg:#FCE1F0;
   --badge-border:#F27CB0;
   --badge-text:#9B1B5C;
@@ -69,6 +71,7 @@ html[data-mode="night"] {
   --sticky-bg:#b6bec82e;
   --sticky-text:#ffffff;
   --sticky-tape: rgba(166, 150, 150, 0.15);
+   --sticky-label:#B9C6E0;
   --badge-bg: rgba(168,200,232,0.12);
   --badge-border:#a8c8e8;
   --badge-text:#eaf1fb;
@@ -251,7 +254,8 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.1; }
 .stat-lbl{
   font-family:var(--font-mono);
   font-size:13px;
-  color:#edeeec;
+  color: var(--sticky-label);
+  transition: color .8s ease;
 }
 
 /* ============ SKILLS ============ */
